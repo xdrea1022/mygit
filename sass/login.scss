@@ -1,0 +1,147 @@
+#top{
+    background: #e0e0e0;
+    ._auto{
+        padding: 15px 0 5px 0;
+        position: relative;
+    }
+    .logo{
+        width: 195px;
+        height: 50px;
+    }
+    .tit{
+        color: #008842;
+        font: 28px/1 "";
+        position: absolute;
+        left: 240px;
+        top:22px;
+        white-space:nowrap;
+
+
+    }
+}
+
+/* 登录 */
+.blank{width: 100%;height: 50px;background: #fff;}
+#login{
+    background: #fff;
+    height: 481px;
+    .logining{
+        display: flex;
+        justify-content: space-between;
+        .img{
+            width:400px;
+            height: 450px;
+            background: url(../imgs/register.png) no-repeat 50px 80px;
+            border-right: 1px dashed #008842;
+        }
+        .fr{
+            padding-right: 105px;
+            .login-main{
+                width:308px;
+                padding: 30px 20px 20px;
+                border:1px solid #e3e6e0;
+                p{
+                   width: 100%;
+                   b{
+                       font: 18px/1 "";
+                       color: #262626;
+                    }
+                    span{
+                        position:absolute;
+                        right: 0;
+                        top:0;
+                        .green{color: #008842;text-decoration: underline;}
+                    } 
+                }
+                p{
+                    span{
+                        position: absolute;
+                        right: 0;
+                    }
+                    .account{
+                        left:1px;
+                        top: 1px !important;
+                        width: 40px;
+                        height:38px;
+                        background: url(../imgs/bg_input.png) no-repeat;
+                        background-position: 0 -120px;
+                    }
+                    .input{
+                        padding-left:50px ;
+                        width:254px;
+                        background: url(../imgs/bg_input.png) no-repeat;
+                        border: 1px solid #c1c1c1;
+                        height: 38px;
+                        vertical-align:middle;
+                        font: 14px/38px "";
+                    }
+                    .input-num{
+                        width: 100px;
+                        float: left;
+                    }
+                    .randomNum{
+                        text-align: center;
+                        display:block;
+                        float: left;
+                        width: 78px;
+                        height: 38px;
+                        border:1px solid #c1c1c1;
+                        font:700 16px/38px "";
+                    }
+                    .gray{
+                        margin-top:13px;
+                        display: block;
+                        float: left;
+                        color: #878787;
+                    }
+                    .check{
+                        margin-right: 9px;
+                        height: 14px;
+                        width: 14px;
+                        vertical-align: -3px;
+                    }
+                    span{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                    span:hover a{color: #008842;}
+                    .btnGreen{
+                        background: #008842;
+                        width: 306px;
+                        display: inline-block;
+                        height: 50px;
+                        text-align: center;
+                        color: #fff;
+                        font: 18px/50px "";
+                    }
+                }
+                
+                .key{
+                    left: 1px;
+                    top: 1px !important;
+                    width: 40px;
+                    height: 38px;
+                    background: url(../imgs/bg_input.png) no-repeat;
+                    background-position:0 -180px ;
+                }
+                .friend{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        height: 20px;
+                        width: 88px;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        margin-bottom: 20px;
+        font-size:12px;
+        color: #878787;
+        position: relative;
+        overflow: hidden;
+    }
+}

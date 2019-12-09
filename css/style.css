@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body html{width:100%;}
+body {
+    background: #f7f8f8;
+    color:#444;
+}
+.auto{
+    width:1200px;
+    margin:0 auto;
+}
+
+.nav{
+    z-index:99;
+    position: relative;
+    width:auto;
+    height:30px;
+    background:#f7f9f8;
+}
+.nav #wrap{
+    
+}
+.nac #header{}
