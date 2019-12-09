@@ -73,11 +73,50 @@
 .goods_list{
     ul{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         li{
             width: 290px;
             height: 358px;
+            margin:10px 0;
+            img{
+                width: 290px;
+                height: 290px;
+                display: block;
+            }
+            .p-info{
+                height: 68px;
+                width: 290px;
+                background: #fff;
+                .p-name{
+                    padding-left:10px ;
+                }
+            }
+            .p-buy{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 10px 0 10px;
+                span{
+                    display: block;
+                    height: 30px;
+                    width: 80px;
+                    font: 700 18px/30px "";
+                    color: #e7380d;
+                }
+                a{
+                    display: block;
+                    height: 30px;
+                    width: 150px;
+                    background: #008742;
+                    color: #fff;
+                    font: 16px/30px "";
+                    text-align: center;
+                    border-radius: 6px;
+                }
+
+            }
+
         }
     }
     
