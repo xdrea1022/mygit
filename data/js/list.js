@@ -118,8 +118,8 @@ new Page({
     url:"http://localhost/yiguo/data/goodsList.json",
     left:document.getElementById("btnL"),
     right:document.getElementById("btnR"),
-    list:document.getElementById("goodslist"),
+    list:document.getElementById("list"),
     pageCont:document.querySelector("#pageWarp ul"),
     index:0,
-    num:5
+    num:8
 })

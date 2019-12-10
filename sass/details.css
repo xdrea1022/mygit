@@ -21,6 +21,36 @@
   height: 500px;
 }
 
+.content .pic-preview .pic-big img {
+  width: 500px;
+  height: 500px;
+}
+
+.content .pic-preview .pic-big span {
+  background: rgba(200, 200, 200, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.content .pic-preview .bBox {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 520px;
+  top: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 2;
+}
+
+.content .pic-preview .bBox img {
+  width: 1200px;
+  height: 900px;
+  position: absolute;
+}
+
 .content .pic-preview .pic-thumb {
   position: absolute;
   bottom: 0;
@@ -48,7 +78,7 @@
 
 .content .product-info {
   position: absolute;
-  left: 700px;
+  left: 630px;
   top: 30px;
   width: 680px;
 }

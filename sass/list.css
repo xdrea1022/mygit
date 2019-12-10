@@ -135,19 +135,15 @@
 }
 
 /* 分页 */
-* {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .pagWarp {
   height: 40px;
+  width: 230px;
   box-shadow: 0 2px 5px #b6b6b6;
-  position: absolute;
+  position: relative;
   border-radius: 2px;
-  right: 42%;
-  top: 430px;
+  right: -41%;
+  bottom: 0px;
+  padding: 0 10px;
 }
 
 #btnL,
@@ -183,4 +179,45 @@
 .active {
   color: blue;
   font-size: 30px;
+}
+
+.footer-service .service {
+  background: #e0e0e0;
+}
+
+.footer-service ul {
+  margin-top: 50px;
+  padding: 30px 0;
+  height: 52px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-service ul li {
+  width: 190px;
+  height: 42px;
+  padding-left: 50px;
+}
+
+.footer-service ul li i {
+  float: left;
+  display: block;
+  background: url(../imgs/service.png) no-repeat left top;
+  height: 42px;
+  width: 42px;
+}
+
+.footer-service ul li b {
+  display: block;
+  color: #007f4d;
+  font: 18px/25px "";
+  padding-left: 15px;
+}
+
+.footer-service ul li span {
+  display: block;
+}
+
+.footer-service ul .s1 {
+  background-position: 0 0;
 }
