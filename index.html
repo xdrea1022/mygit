@@ -8,14 +8,6 @@
     <link href="css/public.css" rel="stylesheet" type="text/css">
     <link href="sass/style.css" rel="stylesheet" type="text/css">
     <link href="sass/homepage.css" rel="stylesheet" type="text/css">
-    <!-- <script src="data/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script>		
-    	$(function(){
-    		$("header").load("http://localhost/yiguo/data/top.html .nav");       
-    		$("footer").load("http://localhost/1911/jq-ajax/load/data/top.html .foo");
-    	})
-    
-    </script> -->
 </head>
 <body>
     <!-- 顶部工具栏 -->
@@ -344,33 +336,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="list5">
-                        <h3>
-                            <a href="#">
-                                <img src="imgs/tu1.png" alt="">
-                                <span>海鲜水产</span>
-                                <s>&gt;</s>
-                            </a>
-                        </h3>
-                        <div class="sub-item">
-                            <h4>
-                                <a href="#">海鲜水产</a>
-                            </h4>
-                            <div class="sub-list">
-                                <a href="#">鳕鱼</a>
-                                <a href="#">虾</a>
-                                <a href="#">鱿鱼</a>
-                                <a href="#">蟹</a>
-                                <a href="#">贝</a>
-                                <a href="#">三文鱼</a>
-                                <a href="#">鲜活</a>
-                                <a href="#">冰冻</a>
-                                <a href="#">冷藏</a>
-                                <a href="#">鲍鱼</a>
-                                <a href="#">海参</a>
-                            </div>
-                        </div>
-                    </li>
+                    
                     <li class="list1">
                         <h3>
                             <a href="#">
@@ -408,8 +374,16 @@
     </div>
 
 <!-- 轮播图 -->
-    <div class="banner">
-        <img src="imgs/banner.jpg" />
+    <div class="banner box">
+        <div class="imgbox">
+            <img src="imgs/banner1.jpg" />
+            <img src="imgs/banner2.jpg" />
+            <img src="imgs/banner1.jpg" />
+        </div>
+        <div class="btns">
+            <input type="button" id="left" value="<<<">
+            <input type="button" id="right" value=">>>">
+        </div>
     </div>
 
 <!-- 商品楼层 -->
@@ -721,4 +695,7 @@
 
     </footer>
 </body>
+<script src="data/js/jquery.js"></script>
+<script src="data/js/banner.js"></script>
+<script src="data/js/homepage.js"></script>
 </html>
