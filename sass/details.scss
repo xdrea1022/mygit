@@ -1,0 +1,163 @@
+/* 产品详情 */
+.content{
+    position: relative;
+    margin-bottom: 20px;
+    .pic-preview{
+        position: relative;
+        left: 0;
+        top: 20px;
+        width: 500px;
+        height: 600px;
+        .pic-big{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:500px;
+            height: 500px;
+        }
+        .pic-thumb{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 500px;
+            ul{
+                height: 97px;
+                padding-top:10px ;
+                li{
+                    float: left;
+                    overflow: hidden;
+                    border: 1px solid #bcbcbc;
+                    margin-left:16px;
+                    cursor: pointer;
+                    img{
+                        height: 85px;
+                        width: 85px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .product-info{
+        position: absolute;
+        left: 700px;
+        top: 30px;
+        width: 680px;
+        .summary-name{
+            margin-bottom:20px;
+            p{
+                height: 40px;
+                margin-top: 15px;
+                color: #777;
+                font: 16px/20px "";
+            }
+            .price{
+                background-color: #fff;
+                padding-left: 20px;
+                strong{
+                    color: red;
+                    font:700 22px/40px "";
+                }
+            }
+        }
+        .num{
+            width: 680px;
+            height: 370px;
+            .left{
+                float: left;
+                width: 450px;
+                height: 300px;
+                border-right: 1px solid #d9d9d9;
+                .choose{
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    width: 468px;
+                    .dt{
+                        line-height: 52px;
+                        float: left;
+                        width: 46px;
+                        padding: 0 10px;
+
+                    }
+                    .dd{
+                        float: left;
+                        .selected{
+                            float: left;
+                            position: relative;
+                            margin: 5px 10px 5px 0;
+                            width: auto;
+                            background-color: #fff;
+                            white-space: nowrap;
+                            text-align: center;
+                            border: 1px solid #e2e2e2;
+                            span{
+                                display: block;
+                                padding: 5px 12px 5px 9px;
+                                border: 1px solid #e2e2e2;
+                                color: #008842;
+                            }
+                            i{
+                                display: block;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                width: 16px;
+                                height: 16px;
+                                overflow: hidden;
+                                background: url(../imgs/product.png) no-repeat 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                float: right;
+                width: 200px;
+                padding-top: 20px;
+                color: #777;
+                p{
+                    height: 30px;
+                }
+            }
+        }
+        .pro-amount{
+            height: 50px;
+            margin-bottom:20px ;
+            .dt{
+                line-height: 43px;
+                float:left;
+                width: 46px;
+                padding: 10px 10px 0;
+            }
+            .dd{
+                float: left;
+                width: 150px;
+                padding: 20px;
+                .btn1{
+                    height: 20px;
+                    width: 18px;
+                    border: 1px solid #e2e2e2;
+                }
+                .btn2{
+                    height: 20px;
+                    width: 18px;
+                    border: 1px solid #e2e2e2;
+                }
+                .txt{
+                    width: 60px;
+                    text-align: center;
+                }
+            }
+        }
+        a{
+            display: block;
+            width: 210px;
+            height: 50px;
+            color: #fff;
+            text-align: center;
+            font: 22px/43px "";
+            background-color: #008842;
+
+        }
+    }
+}

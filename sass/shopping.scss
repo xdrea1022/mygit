@@ -17,9 +17,116 @@
         position: relative;
     }
     .city{
+        height: 38px;
+        width: 970px;
         position: absolute;
         left: 230px;
         top: 4px;
         text-indent: 0;
+        font: 12px/30px "";
+
+        span{
+            float: left;
+        }
+        a{
+            float: right;
+            color: #008842;
+            text-decoration: underline;
+            margin-right: 22px;
+        }
+    }
+    .car-alert{
+        border: 1px solid #e3e6e0;
+        border-top: 0;
+        padding: 10px 20px;
+        background: #fff;
+        .car-table{
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            height: 40px;
+            font: 12px/40px "";
+            padding-left:20px ;
+            thead{
+                background-color: #f1f1f1;
+                border: 1px solid #ebebeb;
+                .car-check{
+                    width: 50px;
+                    text-align: center;
+                }
+            }
+            th{
+                padding: 0 10px;
+                color: #262626;
+                text-align: center;
+            }
+            th.car-info{width: 362px;}
+            th.car-price{width: 110px;}
+            th.car-num{width: 140px;}
+            th.car-tatal{width: 110px;}
+            th.car-spec{width: 110px;}
+            th.car-spec{width: 110px;}
+            tbody{
+                border: 1px solid #ebebeb;
+                td{
+                    border-top:1px solid #ebebeb ;
+                    padding: 10px;
+                    text-align: center;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        border: 1px solid #ebebeb;
+                        position: relative;
+                    }
+                    .quantity-form{
+                        display: flex;
+                        justify-content: space-around;
+                        width: 140px;
+                        height: 30px;
+                        .btn{width: 20px;height: 24px;
+                        }
+                        .txt{width: 56px;height: 24px;text-align: center;}
+                    }
+                }
+            }
+            .car-info{text-align: center;}
+            td.car-check{
+                text-align: center;
+                width: 32px;
+            }
+
+        }
+        .car-footer{
+            background-color:#f7f7f7 ;
+            height: 40px;
+            font: 12px/1;
+            color: #666;
+            margin-top: 20px;
+            padding: 10px;
+            ._auto{
+                width: 100%;
+                position: relative;
+                .fr{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    span{
+                        margin-right: 20px;
+                        em{
+                            color: #ff5317;
+                            font:700 18px/40px "";
+                            margin: 0 5px;
+                        }
+                    }
+                    .count{
+                        font: 700 18px/20px "";
+                        background-color: #ff5317;
+                        color: #fff;
+                        padding: 10px 20px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
     }
 }

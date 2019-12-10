@@ -183,8 +183,8 @@ header {
   height: 38px;
   position: relative;
   text-align: center;
-  background: #008842;
   cursor: pointer;
+  background: #008842;
 }
 
 .header-nav .catalogs .title a {
