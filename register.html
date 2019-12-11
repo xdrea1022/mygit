@@ -13,7 +13,7 @@
     <!-- 头部 -->
     <div id="top">
         <div class="_auto">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="imgs/logo.png" alt="">
             </a>
             <span class="tit">注册</span>
@@ -23,18 +23,18 @@
     <!-- 注册 -->
     <div id="register">
         <div class="_auto">
-            <p class="r-login">我已经注册，现在就&nbsp;<a href="#" class="red">登录</a></p>
+            <p class="r-login">我已经注册，现在就&nbsp;<a href="login.html" class="red">登录</a></p>
             <div class="bottom">
                 <div class="bottom-main">
                     <p>
-                        <span>图形验证码</span>
+                        <span>验证码</span>
                         <input type="text" value="图形验证码" class="txt-code">
                         <i class="randomNum">验证码</i>
                         <a href="#">换一张</a>
                     </p>
                     <p>
-                        <span>手机号</span>
-                        <input type="text " class="tell" value="请输入您的手机号"> 
+                        <span>手机号/账号</span>
+                        <input type="text " id="user" class="tell" value="">
                     </p>
                     <p>
                         <span>手机验证码</span>
@@ -43,7 +43,7 @@
                     </p>
                     <p>
                         <span>设置密码</span>
-                        <input type="password" name="" class="pass">
+                        <input type="password" name="" class="pass" id="pass">
                     </p>
                     <p>
                         <span>确认密码</span>
@@ -53,12 +53,13 @@
                         <span>邀请码</span>
                         <input type="text" name="" class="code">
                     </p>
+                    <em class="em"></em>
                     <p>
                         <input type="checkbox" name="" id="" class="check">
                         <b class="green">我一阅读并同意<a href="#">《易果服务协议》</a><a href="#">《隐私政策》</a></b>
                     </p>
                     <p>
-                        <a href="#" id="btnRegister" class="btnGreen">登&nbsp;录</a>
+                        <a href="#" id="reg" class="btnGreen">注&nbsp;册</a>
                     </p>
                 </div>
                 <div class="img"></div>
@@ -66,4 +67,6 @@
         </div>
     </div>
 </body>
+<script src="data/js/cookie.js"></script>
+<script src="data/js/register.js"></script>
 </html>

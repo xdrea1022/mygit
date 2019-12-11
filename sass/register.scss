@@ -96,7 +96,7 @@
                     display: inline-block;
                     height: 50px;
                     color: #fff;
-                    font: 18px/50px;
+                    font: 18px/50px "";
                     text-align: center;
                     margin-left: 240px;
                 }
@@ -107,6 +107,11 @@
             height: 450px;
             background: url(../imgs/register.png) no-repeat 50px 80px;
             border-left: 1px dashed #008842;
+        }
+        .em{
+            padding-left: 300px;
+            color: red;
+            font: 14px/20px "";
         }
     }
 }

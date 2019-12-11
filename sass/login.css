@@ -29,6 +29,10 @@
   background: #fff;
 }
 
+.em {
+  padding-left: 40px;
+}
+
 #login {
   background: #fff;
   height: 481px;
@@ -74,11 +78,6 @@
 #login .logining .fr .login-main p span .green {
   color: #008842;
   text-decoration: underline;
-}
-
-#login .logining .fr .login-main p span {
-  position: absolute;
-  right: 0;
 }
 
 #login .logining .fr .login-main p .account {
@@ -127,12 +126,6 @@
   height: 14px;
   width: 14px;
   vertical-align: -3px;
-}
-
-#login .logining .fr .login-main p span {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 #login .logining .fr .login-main p span:hover a {

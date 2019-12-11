@@ -37,7 +37,7 @@ class Page{
             // 判断当前i是否小于传入的对象的长度 （(this.index+1)*this.num这个公式会让i变很大）
             if(i<this.res.length){
                 // 拼接字符串
-                str += `<li>
+                str += `<li index="${this.res[i].goodsId}">
                 <a href="">
                     <img src="${this.res[i].url}" alt="">
                 </a>

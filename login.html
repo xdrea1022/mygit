@@ -13,7 +13,7 @@
     <!-- 头部 -->
     <div id="top">
         <div class="_auto">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="imgs/logo.png" alt="">
             </a>
             <span class="tit">登录</span>
@@ -32,29 +32,32 @@
                         <b>欢迎登录</b>
                         <span>
                             还没有账号？
-                            <a href="#" class="green">立即注册</a>
+                            <!-- <a href="register.html" class="green">立即注册</a> -->
+                            <input type="button" name="" id="reg" class="green" value="立即注册" />
+
                         </span>
                     </p>
                     <p>
                         <span class="account">&nbsp;</span>
-                        <input type="text" class=" input userName" name="UserName" placeholder="邮箱/账号/已验证手机"/>
+                        <input type="text" class=" input userName" name="UserName" placeholder="邮箱/账号/已验证手机" id="user"/>
                     </p>
                     <p>
                         <span class="key">&nbsp;</span>
-                        <input type="password" class="input input-key" name="Pwd" id="Pwd" placeholder="密码">
+                        <input type="password" class="input input-key" name="Pwd" id="pass" placeholder="密码">
                     </p>
                     <p>
                         <span class=" key">&nbsp</span>
                         <input type="text" class="input input-num" id="VerifyCode" name="VerifyCode" placeholder="验证码">
-                        <i class="randomNum">验证码</i>
-                        <a href="#" class="gray">换一个</a>
+                        <i class="randomNum">56hn</i>
+                        <a href="#" class="gray" id="gray">换一个</a>
                     </p>
+                    <em class="em"></em>
                     <p>
                         <input type="checkbox" name="" id="" class="check" value=""/>自动登录
                         <span><a href="#" class="miss">忘记登录密码？</a></span>
                     </p>
                     <p>
-                        <a href="#" id="btnLogin" class="btnGreen">登&nbsp;录</a>
+                        <a href="#" id="btnLogin" class="btnGreen log">登&nbsp;录</a>
                     </p>
                     <p>第三方登录</p>
                     <div class="friend">
@@ -73,4 +76,6 @@
         </div>
     </div>
 </body>
+<script src="data/js/cookie.js"></script>
+<script src="data/js/login.js"></script>
 </html>
