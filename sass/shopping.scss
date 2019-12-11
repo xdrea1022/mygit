@@ -60,11 +60,11 @@
                 color: #262626;
                 text-align: center;
             }
-            th.car-info{width: 362px;}
-            th.car-price{width: 110px;}
-            th.car-num{width: 140px;}
+            th.car-img{width:140px}
+            th.car-info{width: 300px;}
+            th.car-price{width: 120px;}
+            th.car-num{width: 180px;}
             th.car-tatal{width: 110px;}
-            th.car-spec{width: 110px;}
             th.car-spec{width: 110px;}
             tbody{
                 border: 1px solid #ebebeb;
@@ -81,15 +81,15 @@
                     .quantity-form{
                         display: flex;
                         justify-content: space-around;
-                        width: 140px;
+                        width: 180px;
                         height: 30px;
-                        .btn{width: 20px;height: 24px;
+                        .btn{width: 25px;height: 24px;
                         }
-                        .txt{width: 56px;height: 24px;text-align: center;}
+                        .txt{width: 70px;height: 24px;text-align: center;}
                     }
                 }
             }
-            .car-info{text-align: center;}
+            td.car-info{text-align: left;padding-left: 30px;}
             td.car-check{
                 text-align: center;
                 width: 32px;

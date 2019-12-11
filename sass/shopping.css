@@ -69,23 +69,23 @@
   text-align: center;
 }
 
-.car .car-alert .car-table th.car-info {
-  width: 362px;
-}
-
-.car .car-alert .car-table th.car-price {
-  width: 110px;
-}
-
-.car .car-alert .car-table th.car-num {
+.car .car-alert .car-table th.car-img {
   width: 140px;
 }
 
-.car .car-alert .car-table th.car-tatal {
-  width: 110px;
+.car .car-alert .car-table th.car-info {
+  width: 300px;
 }
 
-.car .car-alert .car-table th.car-spec {
+.car .car-alert .car-table th.car-price {
+  width: 120px;
+}
+
+.car .car-alert .car-table th.car-num {
+  width: 180px;
+}
+
+.car .car-alert .car-table th.car-tatal {
   width: 110px;
 }
 
@@ -113,23 +113,24 @@
 .car .car-alert .car-table tbody td .quantity-form {
   display: flex;
   justify-content: space-around;
-  width: 140px;
+  width: 180px;
   height: 30px;
 }
 
 .car .car-alert .car-table tbody td .quantity-form .btn {
-  width: 20px;
+  width: 25px;
   height: 24px;
 }
 
 .car .car-alert .car-table tbody td .quantity-form .txt {
-  width: 56px;
+  width: 70px;
   height: 24px;
   text-align: center;
 }
 
-.car .car-alert .car-table .car-info {
-  text-align: center;
+.car .car-alert .car-table td.car-info {
+  text-align: left;
+  padding-left: 30px;
 }
 
 .car .car-alert .car-table td.car-check {

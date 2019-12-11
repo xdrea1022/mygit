@@ -35,15 +35,15 @@
                     setCookie("userMsg",JSON.stringify(this.msg))
                     type = 1;
                 }else if(this.msg[i].user == this.u && this.msg[i].pass != this.p){
-                    this.em.innerHTML = "密码错误";
+                    this.em.innerHTML = "密码错误，请重新输入！";
                     type = 2;
                 }else if(this.msg[i].user == this.u && this.msg[i].pass == this.p && this.msg[i].num !== this.num){
-                    this.em.innerHTML = "验证码错误";
+                    this.em.innerHTML = "验证码错误，请重新输入！";
                     type = 2;
                 }
             }
             if(type == 0){
-                this.em.innerHTML = "用户名不存在,请<a href='register.html'>注册</a>";
+                this.em.innerHTML = "用户名不存在,请先&nbsp<a href='register.html'>注册</a>";
             }
         }
     }

@@ -24,10 +24,10 @@
                 </ul>
                 <ul class="right">
                     <li class="_login">
-                        <a href="#">[登录]</a>
+                        <a href="login.html">[登录]</a>
                     </li>
                     <li class="_register">
-                        <a href="#">[注册]</a>
+                        <a href="register.html">[注册]</a>
                     </li>
                     <li class="myyiguo">
                         <a href="#">
@@ -65,7 +65,7 @@
             </div>
             <div id="header">
                 <div class="_auto header">
-                    <a href="#" class="logo"><img src="imgs/logo.png" alt=""></a>    
+                    <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>    
                 </div>
             </div>            
         </div>
@@ -86,42 +86,18 @@
                 <table class="car-table">
                     <thead>
                         <tr>
-                            <th class="car-check">
-                                <input type="checkbox" checked="checked" name="" id="">
-                                <span>全选</span>
-                            </th>
+                            <th class="car-check"><input type="checkbox" id="checkall">全选</th>
+                            <th class="car-img">图片</th>
                             <th class="car-info">商品信息</th>
                             <th class="car-price">单价</th>
                             <th class="car-num">购买数量</th>
                             <th class="car-tatal">合计</th>
-                            <th class="car-spec">规格</th>
                             <th class="car-opra">操作</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="car-check">
-                                <input type="checkbox">
-                            </td>
-                            <td class="car-info">
-                                <a href="#">
-                                    <img src="imgs/list-img8.jpg" alt="">
-                                    <span>新奇士澳大利亚脐橙12个/箱180g以上/个</span>
-                                </a>
-                            </td>
-                            <td class="car-price">￥88.00</td>
-                            <td class="car-num">
-                                <div class="quantity-form">
-                                    <input type="button" value="-" class="subtract btn">
-                                    <input type="text" name="" id="" class="txt" value="1">
-                                    <input type="button" value="+" class="add btn">
-                                </div>
-                            </td>
-                            <td class="car-total">
-                                ￥<span>88.00</span>
-                            </td>
-                            <td class="car-spec">12个/箱</td>
-                            <td class="car-opera">删除</td>
+                            <td colspan="7">购物车空了，赶紧去<a href="index.html">花钱吧</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -130,10 +106,10 @@
                 <div class="_auto">
                     <div class="fr">
                         <span class="price">
-                            总价：
-                            <em>￥<span>88.00</span></em>
+                            总价：￥
+                            <span class="priceAll"></span>
                         </span>
-                        <a href="#" class="count">去结算</a>
+                        <a href="#" class="count delAll">去结算</a>
                     </div>
                 </div>
             </div>
@@ -293,4 +269,8 @@
 
 </footer>
 </body>
+<script src="data/js/ajax.js"></script>
+<script src="data/js/cookie.js"></script>
+<script src="data/js/car.js"></script>
+
 </html>

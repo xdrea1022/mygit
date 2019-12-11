@@ -14,6 +14,7 @@ class Page{
         this.load();
         // 4.绑定事件
         this.addEvent();
+        this.addEvent1();
     }
     load(){
         // 将this提前存入that中，方便后面使用
@@ -46,7 +47,7 @@ class Page{
                         <a href="#">${this.res[i].name}</a>
                         <div class="p-buy">
                             <span>${this.res[i].price}</span>
-                            <a href="#">加入购物车</a>
+                            <a href="#" class="addCar">加入购物车</a>
                         </div>
 
                     </p>
@@ -111,11 +112,49 @@ class Page{
         // 创建当前点击的标签的className为active，来实现样式的改变
         this.setActive();
     }
+    addEvent1(){
+        var that=this;
+        this.list.addEventListener("click",function(eve){
+            var e=eve||window.event;
+            var target=e.target||e.srcElement;
+            if(target.className=="addCar"){
+                that.id=target.parentNode.parentNode.parentNode.getAttribute("index");  //给该构造函数添加一个可变的属性保存点击的事件id
+                that.setCookie();
+            }
+        })
+    }
+    setCookie(){
+     this.goods= getCookie("goods")?JSON.parse(getCookie("goods")):[];
+     if(this.goods.length<1){
+         this.goods.push({id:this.id,num:1})
+     }else{
+         var off=true;
+        //  console.log(this.id);
+
+        //  for(var i=0;i<this.goods.length;i++){
+        //      if(this.goods[i].id==this.id){
+        //          this.goods[i].num++;
+        //          off=false;
+        //      }
+        //  }
+        var i=0;
+        var off= this.goods.some((value,index)=>{
+            i=index;
+            return value.id==this.id;
+        });
+         if(off){
+             this.goods[i].num++;
+         }else{
+            this.goods.push({id:this.id,num:1});
+         }
+     }
+     setCookie("goods",JSON.stringify(this.goods),{expires:7});
+    }
 }
 
 new Page({
     // 因为形参最好3个以内，所以放在对象中，作为一个传进去，实参，传入地址，获取的左键id 右键id 清单。页码，默认当前为第一页，一页显示5个
-    url:"http://localhost/yiguo/data/goodsList.json",
+    url:"http://localhost/yiguo/data/goods.json",
     left:document.getElementById("btnL"),
     right:document.getElementById("btnR"),
     list:document.getElementById("list"),
