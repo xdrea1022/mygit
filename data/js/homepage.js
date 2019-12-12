@@ -31,15 +31,26 @@
         }
     }
 /* 二级导航 */
-    $(".list").children("li").mouseover(function(){
+    $(function(){
+        $(".list").children("li").hover(
+            function(){
+                $(this).children(".sub-item")
+                .stop()
+                .show(300)
+            },function(){
+                $(".sub-item").stop().hide(300)
+            }
+        )
+    })
+    /* $(".list").children("li").mouseover(function(){
         $(this)
-        .children("ul")
+        .children(".sub-item")
         .stop()
         .show(300)
         .parent()
         .siblings()
-        .children("ul")
+        .children(".sub-item")
         .stop()
         .hide(300);
-    })
+    }) */
 })(jQuery);

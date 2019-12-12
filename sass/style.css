@@ -229,6 +229,7 @@ header {
 }
 
 .header-nav .catalogs .list li .sub-item {
+  display: none;
   width: 250px;
   height: 490px;
   position: absolute;

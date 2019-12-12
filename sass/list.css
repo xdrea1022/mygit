@@ -123,7 +123,7 @@
   color: #e7380d;
 }
 
-.goods_list ul li .p-buy a {
+.goods_list ul li .p-buy div {
   display: block;
   height: 30px;
   width: 150px;
@@ -132,6 +132,7 @@
   font: 16px/30px "";
   text-align: center;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 /* 分页 */

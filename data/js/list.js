@@ -39,15 +39,15 @@ class Page{
             if(i<this.res.length){
                 // 拼接字符串
                 str += `<li index="${this.res[i].goodsId}">
-                <a href="">
+                <div>
                     <img src="${this.res[i].url}" alt="">
-                </a>
+                </div>
                 <div class="p-info">
                     <p class="p-name">
-                        <a href="#">${this.res[i].name}</a>
+                        <a>${this.res[i].name}</a>
                         <div class="p-buy">
-                            <span>${this.res[i].price}</span>
-                            <a href="#" class="addCar">加入购物车</a>
+                            <span>￥${this.res[i].price}</span>
+                            <div class="addCar">加入购物车</div>
                         </div>
 
                     </p>
