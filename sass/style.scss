@@ -185,7 +185,7 @@ header{height:108px;}
                     }
                 }
                 .sub-item{
-                    display: none;
+                    // display: none;
                     width: 250px;
                     height:490px;
                     position: absolute;
@@ -210,11 +210,11 @@ header{height:108px;}
                     }
                 }
             }
-            li.list1:hover .sub-item{display: block;}
-            li.list2:hover .sub-item{display: block;}
-            li.list3:hover .sub-item{display: block;}
-            li.list4:hover .sub-item{display: block;}
-            li.list5:hover .sub-item{display: block;}
+            // li.list1:hover .sub-item{display: block;}
+            // li.list2:hover .sub-item{display: block;}
+            // li.list3:hover .sub-item{display: block;}
+            // li.list4:hover .sub-item{display: block;}
+            // li.list5:hover .sub-item{display: block;}
             li:hover s{display: block;}
         }
 

@@ -50,13 +50,15 @@
                         if (this.goods[i].check == 1) {
                             this.check = 'checked';
                             this.allnum += this.goods[i].num;
+                            console.log(this.allnum )
                             this.allprice += parseFloat((this.res[j].price * this.goods[i].num).toFixed(2));
                         } else {
                             this.check = '';
                         };
                         var sub = (this.res[j].price * this.goods[i].num).toFixed(2);
-                       // this.numAll.value = this.allnum;
-                        this.priceAll.value = this.allprice.toFixed(2);
+                       this.numAll.innerHTML = this.allnum;
+
+                        this.priceAll.innerHTML = this.allprice.toFixed(2);
                         str += `<tr index="${this.res[j].goodsId}">
                         <td class="car-check">
                             <input type="checkbox" class="check" ${this.check}>
@@ -77,7 +79,7 @@
                                 </li>
                             </ul>
                         </td>
-                        <td class="car-total subtotal">${sub}</td>
+                        <td class="car-total subtotal">￥${sub}</td>
                         <td class="car-opera delete">删除</td>
                     </tr>`;
                     }
@@ -90,15 +92,16 @@
             this.tbody.addEventListener('click', function(eve) {
                 var e = eve || window.event;
                 var target = e.target || e.srcElement;
-                if (target.className == 'delete') {
+                if (target.className.indexOf('delete') !=-1) {
                     that.val = target.parentNode.getAttribute('index');
-                    // console.log(that.val);
+                    // console.log(that.val);                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                     that.delCookie();
                     that.display();
                 }
-                if (target.className == 'num-jian') {
-                    that.num = target.parentNode.parentNode.querySelector('input').value;
+                if (target.className.indexOf('subtract') !=-1) {
+                    that.num = target.parentNode.parentNode.querySelector('#input-num').value;
                     that.val = target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.getAttribute('index');
+                    console.log(target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                     if (that.num == 1) {
                         that.num = 1;
                     } else {
@@ -108,16 +111,20 @@
                         that.display();
                     }
                 }
-                if (target.className == 'num-jia') {
-                    that.num = target.parentNode.parentNode.querySelector('input').value;
+                
+                if (target.className.indexOf('add') !=-1) {
+                   
+                    that.num = target.parentNode.parentNode.querySelector('#input-num').value;
                     that.val = target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.getAttribute('index');
+                    console.log(target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode)
                     that.numChange(function(i) {
                         that.goods[i].num++;
                     });
                     that.display();
                 }
-                if (target.className == 'check') {
+                if (target.className.indexOf("check") !=-1) {
                     that.val = target.parentNode.parentNode.getAttribute('index');
+                    console.log(target.parentNode.parentNode)
                     that.checkClick();
                 }
             });
@@ -167,10 +174,12 @@
             this.sum = 0;
             for (var i = 0; i < this.goods.length; i++) {
                 if (this.goods[i].id == this.val) {
+                    console.log(this.val)
                     if (this.goods[i].check == 1) {
                         this.goods[i].check = 0;
                     } else {
                         this.goods[i].check = 1;
+                        console.log(check)
                     }
                 }
                 this.sum += this.goods[i].check;
@@ -192,7 +201,7 @@
             this.display();
         }
         delAllclick() {
-            removeCookie('goodsCookie');
+            removeCookie('goods');
             this.checkall.checked = false;
             this.goods = '';
             this.display();

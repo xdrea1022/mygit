@@ -3,6 +3,7 @@
 
 
 /* 购物车 */
+.car-opera{cursor: pointer;}
 .car{
     margin-top: 20px;
     h2{
@@ -72,6 +73,7 @@
                     border-top:1px solid #ebebeb ;
                     padding: 10px;
                     text-align: center;
+                    
                     img{
                         width: 80px;
                         height: 80px;
@@ -112,6 +114,8 @@
                     top: 0;
                     span{
                         margin-right: 20px;
+                        font: 700 18px/40px "";
+                        color: #008842;
                         em{
                             color: #ff5317;
                             font:700 18px/40px "";

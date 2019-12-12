@@ -30,4 +30,16 @@
             $(".__nav").fadeIn();
         }
     }
+/* 二级导航 */
+    $(".list").children("li").mouseover(function(){
+        $(this)
+        .children("ul")
+        .stop()
+        .show(300)
+        .parent()
+        .siblings()
+        .children("ul")
+        .stop()
+        .hide(300);
+    })
 })(jQuery);

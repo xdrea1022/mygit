@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* 购物车 */
+.car-opera {
+  cursor: pointer;
+}
+
 .car {
   margin-top: 20px;
 }
@@ -160,6 +164,8 @@
 
 .car .car-alert .car-footer ._auto .fr span {
   margin-right: 20px;
+  font: 700 18px/40px "";
+  color: #008842;
 }
 
 .car .car-alert .car-footer ._auto .fr span em {

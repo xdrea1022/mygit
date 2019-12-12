@@ -229,7 +229,6 @@ header {
 }
 
 .header-nav .catalogs .list li .sub-item {
-  display: none;
   width: 250px;
   height: 490px;
   position: absolute;
@@ -250,26 +249,6 @@ header {
   line-height: 30px;
   margin-right: 30px;
   color: #686868;
-}
-
-.header-nav .catalogs .list li.list1:hover .sub-item {
-  display: block;
-}
-
-.header-nav .catalogs .list li.list2:hover .sub-item {
-  display: block;
-}
-
-.header-nav .catalogs .list li.list3:hover .sub-item {
-  display: block;
-}
-
-.header-nav .catalogs .list li.list4:hover .sub-item {
-  display: block;
-}
-
-.header-nav .catalogs .list li.list5:hover .sub-item {
-  display: block;
 }
 
 .header-nav .catalogs .list li:hover s {
