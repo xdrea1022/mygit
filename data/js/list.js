@@ -154,7 +154,7 @@ class Page{
 
 new Page({
     // 因为形参最好3个以内，所以放在对象中，作为一个传进去，实参，传入地址，获取的左键id 右键id 清单。页码，默认当前为第一页，一页显示5个
-    url:"http://localhost/yiguo/data/goods.json",
+    url:"http://localhost/熊德瑞/data/goods.json",
     left:document.getElementById("btnL"),
     right:document.getElementById("btnR"),
     list:document.getElementById("list"),
